@@ -1,0 +1,31 @@
+CREATE DATABASE IF NOT EXISTS repath;
+USE repath;
+CREATE TABLE `repath`.`user` (
+`id` INT AUTO_INCREMENT NOT NULL,
+`name` VARCHAR(250) NOT NULL,
+`email`  VARCHAR(250),
+`company`  VARCHAR(250) NOT NULL,
+PRIMARY KEY(`id`)
+);
+
+
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('1', 'Panos', 'panos@panos.gr', 'Microsoft');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('2', 'Maria', 'maria@maria.gr', 'Amazon');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('3', 'Nikos', 'nickos@nickos.gr', 'Apple');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('4', 'Dimitra', 'dim@dim.gr', 'Microsoft');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('5', 'Tasos', 'tasos@tasos.gr', 'Microsoft');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('6', 'Aliki', 'aliki@aliki.gr', 'Apple');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('7', 'Marios', 'marios@marios.gr', 'Amazon');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('8', 'Panos', 'panos@panos.gr', 'Apple');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('9', 'Tzeni', 'tzeni@tzeni.gr', 'Microsoft');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('10', 'Fay', 'fay@fay.gr', 'Apple');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('11', 'Stella', 'stella@stella.gr', 'Microsoft');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('12', 'Takis', 'takis@takis.gr', 'Amazon');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('13', 'Petros', 'petros@petros.gr', 'Apple');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('14', 'Giorgos', 'giorgos@giorgos.gr', 'Microsoft');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('15', 'Ioanna', 'ioanna@ioanna.gr', 'Apple');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('16', 'Tasia', 'tasia@tasia.gr', 'Microsoft');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('17', 'Katerina', 'kate@kate.gr', 'Microsoft');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('18', 'Antonis', 'antonis@antonis.gr', 'Amazon');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('19', 'Periklis', 'peri@peri.gr', 'Amazon');
+INSERT INTO `repath`.`user` (`id`, `name`, `email`, `company`) VALUES ('20', 'Roula', 'roula@roula.gr', 'Apple');
