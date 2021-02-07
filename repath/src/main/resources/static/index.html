@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../img/repath.png" />
+    <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script defer type="text/javascript" src="index.js"></script>
+    <title>Repath RESTfull Application</title>
+</head>
+
+<body>
+
+    <header class="container">
+        <section class="text-center py-5">
+            <div class="pb-4">
+                <img src="../img/repath.png" alt="">
+            </div>
+            <div>
+                <h2 class="h2">Welcome to our RESTfull candidate application!</h2>
+                <h5 class="h5 text-primary">Here are the existing users to our local database.</h5>
+            </div>
+        </section>
+    </header>
+    <main class="container">
+        <section class=" d-flex justify-content-end">
+            <div class="p-1 ">
+                <span class="h2">Select Company:</span>
+            </div>
+            <div class="p-1">
+                <button class="btn btn-primary" onclick="showAll()">All</button>
+                <button class="btn btn-primary" onclick="perCompany('Amazon')">Amazon</button>
+                <button class="btn btn-primary" onclick="perCompany('Apple')">Apple</button>
+                <button class="btn btn-primary" onclick="perCompany('Microsoft')">Microsoft</button>
+            </div>
+        </section>
+        <table class="table text-center table-hover table-striped">
+            <thead class="bg-warning">
+                <th>ID</th>
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>COMPANY</th>
+                <th>CONTROLS</th>
+            </thead>
+            <tbody id="tableBody" contenteditable>
+
+            </tbody>
+            <tfoot class="table-success align-center">
+                <td></td>
+                <td><input id="addName" class="form-text rounded rounded-2 border-0 w-100 text-center" type="text"
+                        placeholder="Add name*"></td>
+                <td><input id="addEmail" class="form-text rounded rounded-2 border-0 w-100 text-center" type="text"
+                        placeholder="Add email*"></td>
+                <td><input id="addCompany" class="form-text rounded rounded-2 border-0 w-100 text-center" type="text"
+                        placeholder="Add company*"></td>
+                <td><button onclick="addNewUser()" class="border-0 bg-transparent"><i
+                            class="fas fa-save  text-success h3"></i></button></td>
+            </tfoot>
+        </table>
+    </main>
+    <footer class="container">
+        <p class="text-right pt-5">Created by <span class="text-primary">Petros Melachroinidis</span> </p>
+    </footer>
+
+</body>
+
+</html>
